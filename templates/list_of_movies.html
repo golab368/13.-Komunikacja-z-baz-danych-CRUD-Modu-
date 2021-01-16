@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+<body>
+
+    <table border="3">
+        <thead>
+            <td>Movie ID </td>
+            <td>Movie Title </td>
+            <td>Genres </td>
+            <td>Update </td>
+            <td>Delete </td>
+        </thead>
+
+        {% for row in rows %}
+        <tr>
+            <td> {{row["movie_id"]}}  </td>
+            <td> {{row["movie_title"]}}  </td>
+            <td> {{row["genres"]}}   </td>
+            <td> <a href="update/{{row["movie_id"]}}">Update</a></td>
+            <td > <a href="delete/{{row["movie_id"]}}" >Delete </a> </td>
+        </tr>
+        {% endfor %}
+    </table><br><br>
+    <a href="/enternew">Add new movie record</a><br><br>
+    <a href="/">Go to Home Page</a>
+
+
+</body>
+
+
+</head>
+
+</html>

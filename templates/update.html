@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update record</title>
+
+<body>
+    
+        <form action={{url_for("updaterec")}} method="POST">
+    
+        Movie you want to update has numer is<br><br>
+        <input type="text" name="movie_id" value ="{{movie_id}}"><br><br>
+        Movie Title to update<br><br>
+        <input type="text" name="movie_title" /><br><br>
+        Genres to update<br><br>
+        <input type="text" name="genres" /><br><br>
+        <input type="submit" value="submit" /><br><br>
+
+        </form>
+
+    <a href="/">Go to Home Page</a>
+
+</body>
+
+</head>
+
+</html>

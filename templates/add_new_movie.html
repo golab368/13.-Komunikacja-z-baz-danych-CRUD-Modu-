@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+
+<body>
+
+    <form action={{url_for("add_new_movie")}} method="POST">
+
+        <h2>List of movies</h2>
+        Movie Title<br>
+        <input type="text" name="movie_title" /><br>
+        Genres<br>
+        <input type="text" name="genres" /><br>
+        <input type="submit" value="submit" /><br>
+    </form>
+
+
+</body>
+
+
+</head>
+
+</html>
